@@ -1,16 +1,19 @@
-@import '../vendor/Bootstrap/functions';
-@import '../vendor/Bootstrap/variables';
-@import '../vendor/Bootstrap/variables-dark';
-@import '../vendor/Bootstrap/mixins';
-@import '../vendor/Bootstrap/utilities';
-@import '../vendor/Bootstrap/grid';
+/* stylelint-disable */
 
-@import '../vendor/Bootstrap/buttons';
-@import '../vendor/Bootstrap/card';
-@import '../vendor/Bootstrap/containers';
-@import '../vendor/Bootstrap/dropdown';
-@import '../vendor/Bootstrap/images';
-@import '../vendor/Bootstrap/nav';
-@import '../vendor/Bootstrap/navbar';
-@import '../vendor/Bootstrap/bootstrap-grid.scss';
-@import '../vendor/Bootstrap/bootstrap-utilities.scss';
+@import '../vendor/scss/functions';
+@import '../vendor/scss/variables';
+@import '../vendor/scss/variables-dark';
+@import '../vendor/scss/maps';
+@import '../vendor/scss/mixins';
+@import '../vendor/scss/utilities';
+@import '../vendor/scss/grid';
+
+@import '../vendor/scss/buttons';
+@import '../vendor/scss/card';
+@import '../vendor/scss/containers';
+@import '../vendor/scss/dropdown';
+@import '../vendor/scss/images';
+@import '../vendor/scss/nav';
+@import '../vendor/scss/navbar';
+@import '../vendor/scss/bootstrap-grid.scss';
+@import '../vendor/scss/bootstrap-utilities.scss';
