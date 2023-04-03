@@ -1,0 +1,42 @@
+.page-title {
+    padding-left: 15%;
+    .main {
+        font-size: 36px;
+        letter-spacing: 11px;
+        text-transform: uppercase;
+        color: $color-light;
+        font-weight: $font-black;
+        text-align: start;
+    }
+    .sub {
+        font-size: 16px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $color-light;
+        font-weight: $font-black;
+        
+        text-align: start;
+    }
+}
+
+.hero-title {
+    padding-top: 30px;
+    h1 {
+        font-size: 70px;
+        letter-spacing: 20px;
+        text-transform: uppercase;
+        color: $color-main;
+        font-weight: $font-bold;
+
+    }
+}
+
+.discover {
+    h4 {
+        font-size: 34px;
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        color: $color-light;
+        font-weight: $font-normal;
+    }
+}
