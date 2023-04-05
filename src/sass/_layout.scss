@@ -1,8 +1,9 @@
 //Hero
 
 .hero {
-  max-height: 900px;
+  height: 900px;
   width: auto;
+  
   img {
     position: absolute;
     z-index: -1;
@@ -11,6 +12,7 @@
     max-height: 900px;
     object-fit: cover;
   }
+
   .page-nav {
     text-align: center;
     padding-top: 30px;
@@ -23,29 +25,34 @@
       color: $color-nav;
       font-weight: $font-semibold;
       padding: 0 4px;
+
       &:hover{
         color: $color-light;
       }
     }
   }
+
   .hero-title {
     .left {
       padding-left: 15%;
       text-align: start;
       margin-bottom: 0;
     }
+
     .right {
       text-align: end;
       margin-top: 0;
       padding-right: 13%;
     }
   }
+
   .divider{
     display: flex;
     height: 50px;
     width: 100%;
     z-index: 3;
     justify-content: center;
+
     .line {
       height: 15%;
       width: 20%;
@@ -55,11 +62,16 @@
   }
 
   .discover{
-   margin-top: 20vw;
+    position: relative;
+    margin-top: 18vw;
     i {
       color: $color-light;
       font-size: 40px;
       
     }
+  }
+  .container-fluid {
+    height: 100%;
+    
   }
 }
