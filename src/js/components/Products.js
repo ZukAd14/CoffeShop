@@ -1,24 +1,44 @@
 import { select, templates } from '../settings.js';
 import { utils } from '../utils.js';
 
-class Products {
-  constructor(element){
+export class Products {
+  constructor(id, data){
     const thisProducts = this;
+    thisProducts.id = id;
+    thisProducts.data = data;
 
-    thisProducts.renderProducts(element);
+    thisProducts.renderProducts();
+    
   }
 
   renderProducts(){
     const thisProducts = this;
 
-    const generatedProducts = templates.products();
+    const generatedProducts = templates.products(thisProducts.data);
    
 
     thisProducts.element = utils.createDOMFromHTML(generatedProducts);
-    thisProducts.dom = {};
-    thisProducts.dom.wrapper = document.querySelector(select.containerOf.products);
-    thisProducts.dom.wrapper.appendChild(thisProducts.element);
+    
+    const productsContainer = document.querySelector(select.containerOf.products);
+    productsContainer.appendChild(thisProducts.element);
+
+
+    console.log(generatedProducts);
   }
 }
 
-export default Products;
+export class ProductsHeader {
+  constructor(){
+    const thisProductsHeader = this;
+
+    thisProductsHeader.render();
+  }
+  render(){
+    const thisProductsHeader = this;
+
+    const generatedHeader = templates.productsHeader();
+    thisProductsHeader.element = utils.createDOMFromHTML(generatedHeader);
+    const headerContainer = document.querySelector(select.containerOf.products);
+    headerContainer.appendChild(thisProductsHeader.element);
+  }
+}

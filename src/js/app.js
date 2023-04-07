@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { settings, select, templates, classNames } from './settings.js';
-import Home from './components/Home.js';
-import Products from './components/Products.js';
+import {Home, HeaderHome, About} from './components/Home.js';
+import {Products, ProductsHeader} from './components/Products.js';
 import Contact from './components/Contact.js';
 
 const app = {
@@ -61,6 +61,8 @@ const app = {
     }
   },
   initData: function(){
+    const thisApp = this;
+
     const url = settings.db.url + '/' + settings.db.products;
     this.data = {};
     fetch(url)
@@ -69,19 +71,45 @@ const app = {
       })
       .then((parsedResponse) => {
         this.data.products = parsedResponse;
+
+        thisApp.initHome();
+        thisApp.initAbout();
+        thisApp.initProducts();
       });
   },
   initHome: function(){
     const thisApp = this;
 
-    const homeElem = document.querySelector(select.containerOf.homePage);
-    thisApp.homePage = new Home(homeElem);
+    
+
+    for(let homeData in thisApp.data.products){
+      new Home(thisApp.data.products[homeData].id, thisApp.data.products[homeData]);
+    }
+  },
+  initHeaderHome: function(){
+    const thisApp = this;
+
+    const headerHomeElem = document.querySelector(select.containerOf.homePage);
+    thisApp.headerHome = new HeaderHome(headerHomeElem);
+  },
+  initAbout: function(){
+    const thisApp = this;
+
+    const aboutElem = document.querySelector(select.containerOf.homePage);
+    thisApp.aboutHome = new About(aboutElem);
   },
   initProducts: function(){
     const thisApp = this;
 
-    const prodElem = document.querySelector(select.containerOf.products);
-    thisApp.productsPage = new Products(prodElem);
+    for(let productData in thisApp.data.products){
+      new Products(thisApp.data.products[productData].id, thisApp.data.products[productData]);
+    }
+  },
+  initHeaderProducts: function(){
+    const thisApp = this;
+
+    const headerProdElem = document.querySelector(select.containerOf.products);
+    thisApp.headerProd = new ProductsHeader(headerProdElem);
   },
   initContact: function(){
     const thisApp = this;
@@ -93,9 +121,12 @@ const app = {
     const thisApp = this;
 
     thisApp.initPages();
+    thisApp.initHeaderHome();
+    thisApp.initHeaderProducts();
     thisApp.initData();
-    thisApp.initHome();
-    thisApp.initProducts();
+   
+    //thisApp.initAbout();
+    
     thisApp.initContact();
   },
 };
