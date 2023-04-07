@@ -21,9 +21,6 @@ export class Products {
     
     const productsContainer = document.querySelector(select.containerOf.products);
     productsContainer.appendChild(thisProducts.element);
-
-
-    console.log(generatedProducts);
   }
 }
 

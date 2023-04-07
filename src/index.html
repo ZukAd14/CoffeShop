@@ -54,7 +54,7 @@
         <script id="template-productsHeader" type="text/x-handlebars-template">
             <div class="products-header">
                 <div class="products-title">
-                    <h1>Products</h1>
+                    <h2>Products</h2>
                     <div class="divider"></div>
                 </div>
             </div>
@@ -65,9 +65,19 @@
                 <div class="product-wrapper">
                     <div class="product-description">
                         <h2>0{{ id }}. {{title}}</h2>
+                        <div class="row">
+                            <div class="divider"></div>
+                            <div class="desc">{{description}}</div>
+                        </div>
+                        <div class="specs">
+                            <p>Roasting: <span class="gold">{{roasting}}/10</span></p>
+                            <p>Intensity: <span class="gold">{{intensity}}/10</span></p>
+                        </div>
                     </div>
                     <div class="product-image">
-
+                        {{#each image}}
+                        {{{this}}}
+                        {{/each}}
                     </div>
                 </div>
             </div>
