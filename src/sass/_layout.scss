@@ -29,6 +29,10 @@
       &:hover{
         color: $color-light;
       }
+      &.active {
+        border: 3px solid $color-light;
+        border-radius: 5px;
+      }
     }
   }
 
@@ -64,12 +68,14 @@
   .discover{
     position: relative;
     margin-top: 18vw;
+
     i {
       color: $color-light;
       font-size: 40px;
       
     }
   }
+
   .container-fluid {
     height: 100%;
     

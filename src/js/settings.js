@@ -1,12 +1,17 @@
 export const select = {
   templateOf: {
-
+    products: '#template-products',
+    about: '#template-about',
+    contact: '#template-contact'
   },
   containerOf: {
-
+    homePage: '.home-page',
+    products: '.products-page',
+    contact: '.contact-page',
+    pages: '#pages',
   },
   nav: {
-
+    links: '.page-nav a',
   },
 
 };
@@ -28,5 +33,7 @@ export const settings = {
 };
 
 export const templates = {
-
+  products: Handlebars.compile(document.querySelector(select.templateOf.products).innerHTML),
+  about: Handlebars.compile(document.querySelector(select.templateOf.about).innerHTML),
+  contact: Handlebars.compile(document.querySelector(select.templateOf.contact).innerHTML),
 };
