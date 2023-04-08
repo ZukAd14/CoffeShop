@@ -1,4 +1,5 @@
-import { select, templates } from '../settings.js';
+/* eslint-disable no-unused-vars */
+import { classNames, select, templates } from '../settings.js';
 import { utils } from '../utils.js';
 
 export class Products {
@@ -8,6 +9,7 @@ export class Products {
     thisProducts.data = data;
 
     thisProducts.renderProducts();
+    thisProducts.sideSelect();
     
   }
 
@@ -21,6 +23,13 @@ export class Products {
     
     const productsContainer = document.querySelector(select.containerOf.products);
     productsContainer.appendChild(thisProducts.element);
+  }
+
+  sideSelect(){
+    const thisProducts = this;
+
+   
+    
   }
 }
 

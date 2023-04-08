@@ -49,6 +49,7 @@
   justify-content: center;
   margin-top: 25px;
   margin-bottom: 40px;
+
   .products-title {
     h2 {
       color: $color-main;
@@ -57,6 +58,7 @@
       text-transform: uppercase;
       font-weight: $font-semibold;
     }
+
     .divider {
       margin-top: 25px;
       height: 6px;
@@ -76,6 +78,7 @@
     font-weight: $font-semibold;
 
   }
+
   .desc {
     font-size: 15px;
     color: $color-description;

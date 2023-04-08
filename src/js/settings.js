@@ -14,7 +14,10 @@ export const select = {
   nav: {
     links: '.page-nav a',
   },
-
+  products: {
+    wrapper: '.product-wrapper',
+    prize: '.prize',
+  }
 };
 
 export const classNames = {
@@ -24,6 +27,12 @@ export const classNames = {
   pages: {
     active: 'active',
   },
+  products: {
+    even: 'even',
+  },
+  prize: {
+    active: 'active',
+  }
 };
 
 export const settings = {

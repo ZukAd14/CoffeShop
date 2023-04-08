@@ -100,9 +100,12 @@ const app = {
   },
   initProducts: function(){
     const thisApp = this;
+    
+    
 
     for(let productData in thisApp.data.products){
       new Products(thisApp.data.products[productData].id, thisApp.data.products[productData]);
+     
     }
   },
   initHeaderProducts: function(){
