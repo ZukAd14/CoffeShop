@@ -82,3 +82,15 @@
     
   }
 }
+
+.footer {
+  width: 100%;
+  height: 45px;
+  h5 {
+    font-size: 15px;
+    color: $color-description;
+    font-weight: $font-semibold;
+    text-align: center;
+    padding-top: 15px;
+  }
+}

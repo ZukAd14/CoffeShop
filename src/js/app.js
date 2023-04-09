@@ -95,7 +95,7 @@ const app = {
   initAbout: function(){
     const thisApp = this;
 
-    const aboutElem = document.querySelector(select.containerOf.homePage);
+    const aboutElem = document.querySelector(select.containerOf.about);
     thisApp.aboutHome = new About(aboutElem);
   },
   initProducts: function(){

@@ -55,7 +55,7 @@ export class About {
    
 
     thisAbout.element = utils.createDOMFromHTML(generatedAbout);
-    const aboutContainer = document.querySelector(select.containerOf.homePage);
+    const aboutContainer = document.querySelector(select.containerOf.about);
     aboutContainer.appendChild(thisAbout.element);
   }
 }

@@ -85,3 +85,53 @@
     font-weight: $font-normal;
   }
 }
+
+.about-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 40px;
+
+  .about-title {
+    h2 {
+      color: $color-main;
+      font-size: 70px;
+      letter-spacing: 15px;
+      text-transform: uppercase;
+      font-weight: $font-semibold;
+    }
+
+    .divider {
+      margin-top: 25px;
+      height: 6px;
+      background-color: $color-main;
+      width: 150%;
+      transform: translate(-20%, -50%);
+    }
+  }
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 40px;
+
+  .contact-title {
+    h2 {
+      color: $color-main;
+      font-size: 50px;
+      letter-spacing: 15px;
+      text-transform: uppercase;
+      font-weight: $font-semibold;
+    }
+
+    .divider {
+      margin-top: 25px;
+      height: 6px;
+      background-color: $color-main;
+      width: 140%;
+      transform: translate(-20%, -50%);
+    }
+  }
+}
