@@ -9,8 +9,6 @@ export class Products {
     thisProducts.data = data;
 
     thisProducts.renderProducts();
-    thisProducts.sideSelect();
-    
   }
 
   renderProducts(){
@@ -18,18 +16,16 @@ export class Products {
 
     const generatedProducts = templates.products(thisProducts.data);
    
+    thisProducts.dom = {};
 
     thisProducts.element = utils.createDOMFromHTML(generatedProducts);
     
-    const productsContainer = document.querySelector(select.containerOf.products);
-    productsContainer.appendChild(thisProducts.element);
-  }
-
-  sideSelect(){
-    const thisProducts = this;
-
-   
+    const productsContainer = document.querySelectorAll(select.containerOf.products);
     
+    for(let products of productsContainer){
+      const clone = thisProducts.element.cloneNode(true);
+      products.appendChild(clone);
+    }
   }
 }
 

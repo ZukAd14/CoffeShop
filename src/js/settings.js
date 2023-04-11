@@ -11,6 +11,7 @@ export const select = {
     contact: '.contact-page',
     pages: '#pages',
     about: '.about-page',
+    pagesClass: '.pages',
   },
   nav: {
     links: '.page-nav a',
@@ -18,6 +19,7 @@ export const select = {
   products: {
     wrapper: '.product-wrapper',
     prize: '.prize',
+    product: '.products',
   }
 };
 

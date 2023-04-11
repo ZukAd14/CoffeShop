@@ -64,7 +64,7 @@ const app = {
     const thisApp = this;
 
     const url = settings.db.url + '/' + settings.db.products;
-    this.data = {};
+    thisApp.data = {};
     fetch(url)
       .then((rawResponse) => {
         return rawResponse.json();
@@ -105,7 +105,6 @@ const app = {
 
     for(let productData in thisApp.data.products){
       new Products(thisApp.data.products[productData].id, thisApp.data.products[productData]);
-     
     }
   },
   initHeaderProducts: function(){
@@ -120,6 +119,14 @@ const app = {
     const contactElem = document.querySelector(select.containerOf.contact);
     thisApp.contactPage = new Contact(contactElem);
   },
+  initSides: function(){
+    const thisApp = this;
+
+    
+     
+    
+    
+  },
   init: function(){
     const thisApp = this;
 
@@ -127,10 +134,8 @@ const app = {
     thisApp.initHeaderHome();
     thisApp.initHeaderProducts();
     thisApp.initData();
-   
-    //thisApp.initAbout();
-    
     thisApp.initContact();
+    thisApp.initSides();
   },
 };
 
