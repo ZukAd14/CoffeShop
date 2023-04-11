@@ -1,144 +1,174 @@
 @media screen and (max-width: 767px) {
-    .hero {
-        height: 450px;
+  .hero {
+    height: 450px;
         
-        img {
-            max-height: 450px;
+    img {
+      max-height: 450px;
+    }
+
+    .page-nav {
+      a {
+        font-size: 16px;
+      }
+    }
+
+    .page-title {
+      padding-left: 8%;
+
+      .main {
+        font-size: 24px;
+        letter-spacing: 9px;
+      }
+
+      .sub {
+        font-size: 14px;
+        letter-spacing: 3px;
+      }
+    }
+
+    .hero-title {
+      padding-top: 15px;
+
+      h1 {
+        font-size: 42px;
+        letter-spacing: 12px;
+      }
+
+      .left {
+        padding-left: 8%;
+      }
+
+      .right {
+        padding-right: 8%;
+      }
+    }
+
+    .divider {
+      height: 30px;
+    }
+
+    .discover {
+      margin-top: 8%;
+
+      h4 {
+        font-size: 26px;
+        letter-spacing: 5px;
+      }
+
+      i {
+        font-size: 32px;
+      }
+    }
+  }
+
+  .products-header {
+    .products-title {
+      h2 {
+        font-size: 42px;
+        letter-spacing: 12px;
+      }
+
+      .divider {
+        height: 4px;
+      }
+    }
+  }
+
+  .product-wrapper {
+    margin-left: 0px;
+    
+    .product-description {
+      width: 250px;
+
+      h2 {
+        font-size: 24px;
+      }
+
+      .desc {
+        width: 250px;
+        height: 90px;
+      }
+    }
+
+    .product-image {
+      margin: 20px;
+      width: 300px;
+      height: 250px;
+      padding-left: 15px;
+      margin-right: 0;
+    }
+
+    .prize {
+      height: 100px;
+      width: 100px;
+      left: 34%;
+      top: 105%;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .about-page {
+    .about-wrapper {
+      height: 500px;
+
+      img {
+        height: 500px;
+      }
+
+      .about-header {
+        .about-title {
+          h2 {
+            font-size: 42px;
+            letter-spacing: 12px;
+          }
+
+          .divider {
+            height: 4px;
+          }
         }
-        .page-nav {
-            a {
-                font-size: 16px;
-            }
+      }
+
+      .text {
+        margin-left: 20%;
+
+        p {
+          font-size: 24px;
         }
-        .page-title {
-            padding-left: 8%;
-            .main {
-                font-size: 24px;
-                letter-spacing: 9px;
-            }
-            .sub {
-                font-size: 14px;
-                letter-spacing: 3px;
-            }
+      }
+    }
+  }
+
+  .contact-wrapper {
+    .contact-header {
+      .contact-title {
+        h2 {
+          font-size: 42px;
+          letter-spacing: 12px;
         }
 
-        .hero-title {
-            padding-top: 15px;
-            h1 {
-                font-size: 42px;
-                letter-spacing: 12px;
-            }
-            .left {
-                padding-left: 8%;
-            }
-            .right {
-                padding-right: 8%;
-            }
-        }
         .divider {
-            height: 30px;
+          height: 4px;
         }
-        .discover {
-            margin-top: 8%;
-            h4 {
-                font-size: 26px;
-                letter-spacing: 5px;
-            }
-            i {
-                font-size: 32px;
-            }
-        }
+      }
     }
-    .products-header {
-        .products-title {
-            h2 {
-                font-size: 42px;
-                letter-spacing: 12px;
-            }
-            .divider {
-                height: 4px;
-            }
-        }
+
+    form {
+      label {
+        font-size: 20px;
+      }
+
+      input {
+        height: 40px;
+        width: 270px;
+      }
+
+      textarea {
+        width: 270px;
+      }
     }
-    .product-wrapper {
-        margin-left: 0px;
-    
-        .product-description {
-            width: 250px;
-            h2 {
-                font-size: 24px;
-            }
-            .desc {
-                width: 250px;
-                height: 90px;
-            }
-        }
-        .product-image {
-            margin: 20px;
-            width: 300px;
-            height: 250px;
-            padding-left: 15px;
-            margin-right: 0;
-        }
-        .prize {
-            height: 100px;
-            width: 100px;
-            left: 34%;
-            top: 105%;
-            img {
-                height: 100%;
-                width: 100%;
-            }
-        }
-    }
-    .about-page {
-        .about-wrapper {
-            height: 500px;
-            img {
-                height: 500px;
-            }
-            .about-header {
-                .about-title {
-                    h2 {
-                        font-size: 42px;
-                        letter-spacing: 12px;
-                    }
-                    .divider {
-                        height: 4px;
-                    }
-                }
-            }
-            .text {
-                margin-left: 20%;
-                p {
-                    font-size: 24px;
-                }
-            }
-        }
-    }
-    .contact-wrapper {
-        .contact-header {
-            .contact-title {
-                h2 {
-                    font-size: 42px;
-                    letter-spacing: 12px;
-                }
-                .divider {
-                    height: 4px;
-                }
-            }
-        }
-        form {
-            label {
-                font-size: 20px;
-            }
-            input {
-                height: 40px;
-                width: 270px;
-            }
-            textarea {
-                width: 270px;
-            }
-        }
-    }
+  }
 }
