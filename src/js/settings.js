@@ -19,7 +19,7 @@ export const select = {
   products: {
     wrapper: '.product-wrapper',
     prize: '.prize',
-    product: '.products',
+    product: '.product',
   }
 };
 

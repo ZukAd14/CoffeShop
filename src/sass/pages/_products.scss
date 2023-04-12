@@ -1,12 +1,11 @@
 
 
-.even {
-  flex-direction: row-reverse;
-}
+
 
 .product-wrapper {
   display: flex;
   margin: 40px auto 40px 60px;
+  justify-content: space-around;
 }
 
 .product-description {
@@ -72,5 +71,16 @@
 
   &.active {
     display: block;
+  }
+}
+
+.product:nth-child(odd) {
+  .product-wrapper {
+    flex-direction: row-reverse;
+    margin-left: 0;
+    padding-left: -15px;
+    .product-image {
+      margin-left: 0;
+    }
   }
 }
